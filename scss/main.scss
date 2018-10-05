@@ -1,5 +1,5 @@
 @import "config";
-@import "_menu";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font_family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -52,7 +52,7 @@ main {
   height: 100%;
 
   .icons {
-    margin_top: 1rem;
+    margin-top: 1rem;
 
     a {
       padding: 0.4rem;

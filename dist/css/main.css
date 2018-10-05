@@ -1,6 +1,6 @@
 .menu-btn {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -11,6 +11,14 @@
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 1.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 * {
   box-sizing: border-box; }
@@ -20,7 +28,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font_family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -68,7 +76,7 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin_top: 1rem; }
+    margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
