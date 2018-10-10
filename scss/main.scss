@@ -8,7 +8,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-tex-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -70,3 +70,26 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+@import "mobile";
