@@ -44,10 +44,11 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0);
 
-    .portrait {
-      background: url("img/IMG_0434-300x300.JPG");
-      width: 150px;
-      height: 150px;
+    .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 3px solid;
     }
   }
 
@@ -67,8 +68,16 @@
 }
 // smartphones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
+    }
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
   }
 
   .projects {
