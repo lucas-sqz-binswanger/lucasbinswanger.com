@@ -484,7 +484,7 @@ contact1 form label{
   }
 
   .company-info h3, .company-info ul{
-    text align: left;
+    text-align: left;
   }
 
 }
