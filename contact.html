@@ -58,18 +58,54 @@
         <h1 class="lg-heading">
             Contact <span class="text-secondary">Me</span>
         </h1>
-        <h2 class="sm-heading">
-            Why am I here?
-        </h2>
-        <div class="boxes">
-            <div>
-                <span class="text-secondary">Email:</span> lucasbinswanger@gmail.com
+        <div class="wrapper">
+            <div class="company-info">
+                <h3></h3>
+                <ul>
+                    <li>Lucas Binswanger</li>
+                    <li>Oklahoma City, Oklahoma</li>
+                    <li>lucasbinswanger@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact1">
+                <h3>Email Me</h3>
+                <div class="alert">Your Message has been sent</div>
+                <!-- remember to validate email after test-->
+                <form id="contactform">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="name" id="company">
+                    </p>
+                    <p>
+                        <label>email</label>
+                        <input type="email" name="name" id="email" required>
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="name" id="phone">
+                    </p>
+                    <p>
+                        <label>Message</label>
+                        <textarea name="message"  id="message"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
 
             </div>
         </div>
+
+
+
     </main>
 
 
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 
     <script src="js/main.js"></script>
 
